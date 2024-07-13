@@ -1,5 +1,8 @@
 # Types of keys
 
+1. One-time access key (It is deleted after a single use)
+2. Infinite Key 
+
 Key is a string like 'KEY-' + random uuid (in upper case)
 
 Example
@@ -15,5 +18,6 @@ KEY-C9E11A7C-23FD-4E29-9D9B-23D75C3C5DF8
 5. **Suspected** (Last chance to gain access. In case of another refusal, the status will change to banned)
 6. **Banned** (The folder owner does not receive requests from banned users. Ofc user doesn't have any access to this folder)
 
-You can create keys only for Readers, Verified Readers, and Editors.
-
+### Important
+1. You can create keys only for Readers, Verified Readers, and Editors.
+2. If you delete the key, it will become invalid and the user will not be able to access the folder.
