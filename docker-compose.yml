@@ -1,0 +1,52 @@
+version: "3.9"
+
+services:
+  app:
+    image: link-saver:local
+    container_name: link-saver-app
+    depends_on:
+      - postgres
+    networks:
+      - postgres-network
+
+  postgres:
+    image: postgres:16.0
+    container_name: link-saver-postgres
+    # environment:
+    #   - POSTGRES_USER=$POSTGRES_USER
+    #   - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+    #   - POSTGRES_DB=$POSTGRES_DB
+    env_file:
+      - $PWD/configs/config_postgres.env
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./init/:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres-network
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=noemail@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    ports:
+      - "5555:80"
+    networks:
+      - postgres-network
+
+
+volumes:
+  db-data:
+    name: link-saver-postgres-data
+    driver_opts:
+      type: none
+      device: $PWD/storage/postgres/data
+      o: bind
+
+networks:
+  postgres-network:
+    driver: bridge
+    #external: true

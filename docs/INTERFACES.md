@@ -53,3 +53,11 @@ Interface for working with access keys.
 4. **Back**
 
 [Learn more about types of keys](/docs/KEYS.md)
+
+### Settings
+Interface for settings
+
+1. **Set language**
+2. **Set output format**
+3. **Premium**
+4. **Back**

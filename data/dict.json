@@ -1,0 +1,62 @@
+[
+	{
+		"msg_name": "msgNoCurrentOperation",
+		"eng_text": "At the moment, no operation is being performed 😶",
+		"rus_text": "В данный момент никакая операция не выполняется 😶"
+	},
+	{
+		"msg_name": "msgUnknownCommand",
+		"eng_text": "Unknown command 🤔",
+		"rus_text": "В данный момент никакая операция не выполняется 😶"
+	},
+	{
+		"msg_name": "msgUnexpectedCommand",
+		"eng_text": "Unexpected command 🤕",
+		"rus_text": "Неожиданная команда 🤕"
+	},
+	{
+		"msg_name": "msgFolderNotExists",
+		"eng_text": "This folder doesn't exist 🥺",
+		"rus_text": "Эта папка не существует 🥺"
+	},
+	{
+		"msg_name": "msgNoSavedLinks",
+		"eng_text": "You have no saved links 😢"
+	},
+	{
+		"msg_name": "msgNoFolders",
+		"eng_text": "No existing folders 😢"
+	}
+]
+
+{
+    "msgNoCurrentOperation": "At the moment, no operation is being performed 😶",
+    "msgUnknownCommand": "Unknown command 🤔",
+	"msgUnexpectedCommand": "Unexpected command 🤕",
+	"msgFolderNotExists": "This folder doesn't exist 🥺",
+	"msgNoSavedPages": "You have no saved pages 😢",
+	"msgNoFolders": "No existing folders 😢",
+	"msgEmptyFolder": "This folder is still empty 😢",
+	"msgCantRename": "Cannot be renamed. A folder with this name already exists 😧",
+	"msgLongMessage": "The message is too long, enter something shorter 🥴",
+	"msgIncorrectAccessLvl": "The operation has been stopped. Unfortunately, you don't have the right level of access 🔒",
+
+	"msgFolderAlreadyExists": "This folder already exists 😌",
+	"msgAlreadyExists": "You already have this page in your list 😌",
+
+	"msgNewFolderCreated": "New Folder created 😇",
+	"msgSave": "Saved! 👌",
+	"msgFolderDeleted": "Folder deleted 🫡",
+	"msgPageDeleted": "Link deleted 🫡",
+	"msgFolderRenamed": "Folder renamed 👌",
+	"msgOperationCancelled": "Operation cancelled 🤓",
+	"msgThanksForFeedback ": "Thank you for your help in improving our service! 🥺",
+
+	"msgBack": "Back ⬅",
+	"msgChooseFolder": "Choose folder",
+	"msgChooseLink": "Choose link for deletion",
+	"msgEnterFolderName": "Enter the folder name",
+	"msgEnterNewFolderName": "Enter new folder name",
+	"msgEnterUrlName": "Enter short description (tag) for link",
+	"msgEnterFeedback": "Write your feedback, ideas or suggestions. Don't worry, it's anonymous 💫"
+}
